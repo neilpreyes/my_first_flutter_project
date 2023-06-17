@@ -9,10 +9,10 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.brown[50],
+      backgroundColor: Colors.blue[100],
       appBar: AppBar(
         title: Text("CPP Housing Rating"),
-        backgroundColor: Colors.redAccent[400],
+        backgroundColor: Colors.red[300],
         elevation: 0.0,
         actions: <Widget>[
           OutlinedButton.icon(

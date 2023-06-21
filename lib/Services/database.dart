@@ -18,6 +18,15 @@ class DatabaseService {
     });
   }
 
+  Future<DocumentReference> createNewUserData(String? name, String? address, int? zipcode, int? rating) async {
+    return await housing.add({
+      'name': name ?? '',
+      'address': address ?? '',
+      'zipcode': zipcode ?? 0,
+      'rating': rating ?? 0,
+    });
+  }
+
   //Housing list from snapshot
   List<houses> _houseListFromSnapshot(QuerySnapshot snapshot){
 
@@ -35,6 +44,10 @@ class DatabaseService {
   //Get housing stream
   Stream<List<houses>> get house{
     return housing.snapshots().map(_houseListFromSnapshot);
+  }
+
+  Stream<List<houses>> getHousesByZipcode(String zipcode) {
+    return housing.where('zipcode', isEqualTo: zipcode).snapshots().map(_houseListFromSnapshot);
   }
 
 }

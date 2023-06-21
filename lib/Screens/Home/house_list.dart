@@ -27,7 +27,12 @@ class _HouseListState extends State<HouseList> {
     return ListView.builder(
       itemCount: homes.length,
       itemBuilder: (context, index) {
-        return HouseTile(house: homes[index]);
+        if(homes[index].zipcode != 0){
+          return HouseTile(house: homes[index]);
+        }else{
+          return Container();
+        }
+
       },
     );
   }

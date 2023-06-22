@@ -45,7 +45,7 @@ class _CreateFormState extends State<CreateForm> {
           ),
           SizedBox(height: 4.0),
           TextFormField(
-            decoration: textInputDecoration.copyWith(hintText: 'Enter a zipcode'),
+            decoration: textInputDecoration.copyWith(hintText: 'Enter a Zipcode'),
             validator: (val) => (val != null && val.isEmpty) ? 'Please enter a zipcode' : null,
             onChanged: (val) => setState(() => _currentZipcode = int.parse(val)),
           ),

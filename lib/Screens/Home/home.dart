@@ -7,6 +7,7 @@ import 'package:provider/provider.dart';
 import 'package:my_first_flutter_project/Screens/Home/house_list.dart';
 import 'package:my_first_flutter_project/Models/houses.dart';
 import 'package:my_first_flutter_project/Screens/Home/create_form.dart';
+import 'package:my_first_flutter_project/Screens/Home/house_search.dart';
 
 class Home extends StatelessWidget {
   //const Home({super.key});
@@ -24,14 +25,16 @@ class Home extends StatelessWidget {
       });
     }
 
-    // void _showSearchPanel(){
-    //   showModalBottomSheet(context: context, builder: (context){
-    //     return Container(
-    //       padding: EdgeInsets.symmetric(vertical: 20.0, horizontal: 60.0),
-    //       child: HouseSearch(),
-    //     );
-    //   });
-    // }
+    void _showSearchPanel(){
+      showModalBottomSheet(context: context, builder: (context){
+        return StreamProvider<List<houses>>.value(
+          initialData: [],
+          value: DatabaseService().house,
+          child: HouseSearch(),
+        );
+      });
+    }
+
 
     return StreamProvider<List<houses>>.value(
       initialData: [],
@@ -43,11 +46,11 @@ class Home extends StatelessWidget {
           backgroundColor: Colors.red[300],
           elevation: 0.0,
           actions: <Widget>[
-            // IconButton(
-            //   icon: Icon(Icons.search),
-            //   //label: Text('Search'),
-            //   onPressed: () => _showSearchPanel(),//TODO FIX
-            // ),
+            IconButton(
+              icon: Icon(Icons.search),
+              //label: Text('Search'),
+              onPressed: () => _showSearchPanel(),//TODO FIX
+            ),
             IconButton(//outlines button before
               icon: Icon(Icons.add),
               //label: Text('Create'),

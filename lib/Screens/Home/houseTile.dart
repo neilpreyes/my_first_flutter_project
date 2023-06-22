@@ -14,9 +14,13 @@ class HouseTile extends StatelessWidget {
         child: ListTile(
           leading: CircleAvatar(
             radius: 25.0,
-            backgroundColor: Colors.redAccent,
+            backgroundColor: Colors.orange[700],
             child: Text(
-                (house?.rating).toString() + "/10"
+                (house?.rating).toString() + "/10",
+                style: const TextStyle(
+                  color: Colors.black,
+                  fontWeight: FontWeight.bold,
+                ),
             ),
           ),
           title: Text((house?.name).toString()),

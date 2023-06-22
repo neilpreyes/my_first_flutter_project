@@ -40,10 +40,12 @@ class Home extends StatelessWidget {
       initialData: [],
       value: DatabaseService().house,
       child: Scaffold(
-        backgroundColor: Colors.blue[100],
+        backgroundColor: Colors.amber[300],
+        //Colors.blue[100],
         appBar: AppBar(
           title: Text("CPP Housing Rating"),
-          backgroundColor: Colors.red[300],
+          backgroundColor: Colors.green[900],
+          //Colors.red[300],
           elevation: 0.0,
           actions: <Widget>[
             IconButton(

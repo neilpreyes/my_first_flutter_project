@@ -1,16 +1,11 @@
 # my_first_flutter_project
 
-A new Flutter project.
+This project is aimed to create a safe environment for CPP students to rate and help each other find appropriate housing options.
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## How To
+- The user will first be given the option to register or sign in, accordingly
+  - Either one prompts the user to input an email and a password
+- Upon inputting the correct information, the user is loaded into the Home Page
+- The Home Page allows the user to see all available listings, search through them, and create a listing
+- Additionally, the user has the option to Log Out on the Home Page

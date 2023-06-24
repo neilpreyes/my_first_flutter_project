@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:my_first_flutter_project/shared/constants.dart';
 import '../../Services/database.dart';
 
+//Create a house listing form
 class CreateForm extends StatefulWidget {
 
   @override

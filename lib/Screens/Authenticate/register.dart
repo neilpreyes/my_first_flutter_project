@@ -3,7 +3,7 @@ import 'package:my_first_flutter_project/Services/auth.dart';
 import 'package:my_first_flutter_project/shared/constants.dart';
 import 'package:my_first_flutter_project/shared/loading.dart';
 
-
+//Register screen
 class Register extends StatefulWidget {
   //const Register({super.key});
   final toggleView;

@@ -3,6 +3,7 @@ import 'package:my_first_flutter_project/Services/auth.dart';
 import 'package:my_first_flutter_project/shared/constants.dart';
 import 'package:my_first_flutter_project/shared/loading.dart';
 
+//Sign in screen
 class SignIn extends StatefulWidget {
   //const SignIn({super.key});
   final toggleView;

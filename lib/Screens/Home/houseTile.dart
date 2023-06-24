@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:my_first_flutter_project/Models/houses.dart';
 
+//Card layout for house listings
 class HouseTile extends StatelessWidget {
   final houses? house;
   HouseTile({this.house});

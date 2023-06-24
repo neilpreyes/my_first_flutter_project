@@ -9,6 +9,7 @@ import 'package:my_first_flutter_project/Models/houses.dart';
 import 'package:my_first_flutter_project/Screens/Home/create_form.dart';
 import 'package:my_first_flutter_project/Screens/Home/house_search.dart';
 
+//Home Screen that lists ratings automatically
 class Home extends StatelessWidget {
   //const Home({super.key});
   final AuthService _auth = AuthService();

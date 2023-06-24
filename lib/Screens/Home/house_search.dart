@@ -3,6 +3,7 @@ import 'package:provider/provider.dart';
 import 'package:my_first_flutter_project/Models/houses.dart';
 import 'package:my_first_flutter_project/Screens/Home/houseTile.dart';
 
+//Allows to search database and list on home page accordingly
 class HouseSearch extends StatefulWidget {
   @override
   _HouseSearchState createState() => _HouseSearchState();

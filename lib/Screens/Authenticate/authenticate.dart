@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:my_first_flutter_project/Screens/Authenticate/sign_in.dart';
 import 'package:my_first_flutter_project/Screens/Authenticate/register.dart';
 
+//main authentication widget
 class Authenticate extends StatefulWidget {
   const Authenticate({super.key});
 
@@ -12,7 +13,7 @@ class Authenticate extends StatefulWidget {
 class _AuthenticateState extends State<Authenticate> {
   bool showSignIn = true;
 
-  void toggleView(){
+  void toggleView(){//toggles between sign in and register states
     setState(() => showSignIn = !showSignIn);
   }
 

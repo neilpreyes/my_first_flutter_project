@@ -1,3 +1,4 @@
+//initializes and stores house_list data
 class houses{
 
   final String? name;

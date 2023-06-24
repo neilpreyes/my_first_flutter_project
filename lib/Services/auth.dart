@@ -2,6 +2,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import "package:my_first_flutter_project/Models/UserId.dart";
 import 'package:my_first_flutter_project/Services/database.dart';
 
+//Firebase authentication service
 class AuthService {
 
   final FirebaseAuth _auth = FirebaseAuth.instance;

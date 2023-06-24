@@ -4,6 +4,7 @@ import 'package:provider/provider.dart';
 import 'package:my_first_flutter_project/Models/houses.dart';
 import 'package:my_first_flutter_project/Screens/Home/houseTile.dart';
 
+//Lists homes on home screen
 class HouseList extends StatefulWidget {
   @override
   State<HouseList> createState() => _HouseListState();

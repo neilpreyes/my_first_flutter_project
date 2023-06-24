@@ -6,6 +6,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'Services/auth.dart';
 import 'Models/UserId.dart';
 
+//Main screen => sign in or register
 void main() {
   runApp(const MyApp());
 }
